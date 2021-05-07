@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local UI = Instance.new("ScreenGui")
 local Main = Instance.new("ImageLabel")
 local Frame = Instance.new("ImageLabel")
@@ -46,7 +41,7 @@ local expand_more = Instance.new("ImageButton")
 --Properties:
 
 UI.Name = "UI"
-UI.Parent = game.Workspace
+UI.Parent = game.CoreGui
 
 Main.Name = "Main"
 Main.Parent = UI
@@ -59,6 +54,8 @@ Main.ImageColor3 = Color3.fromRGB(21, 22, 27)
 Main.ScaleType = Enum.ScaleType.Slice
 Main.SliceCenter = Rect.new(100, 100, 100, 100)
 Main.SliceScale = 0.120
+Main.Active = true
+Main.Draggable = true
 
 Frame.Name = "Frame"
 Frame.Parent = Main
